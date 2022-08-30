@@ -72,6 +72,12 @@ body {
     border-radius: 10px;
   }
 
+.ig {
+    color: white;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
 @media only screen and (max-width: 800px) {
     .box {
         max-width: 100%;
