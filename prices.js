@@ -10,7 +10,7 @@ class Product {
     pricesBoxHTML(){
         let ps = ``
         for (let i = 0; i < this.prices.length; i++) {
-            if (i != 0) ps += `<div id="price-${i}">x${i} $${this.prices[i]}</div>`
+            if (i != 0) ps += `<div id="price-${i}" class="price">x${i} $${this.prices[i]}</div>`
         }
         return ps
     }
@@ -25,8 +25,8 @@ class Product {
 const products = [
     new Product("Facturas", [80, 150]),
     new Product("Tortafritas", [80, 150]),
-    new Product("Churros", [80, 150]),
     new Product("Alfajores", [50]),
+    new Product("Churros", [80, 150]),
     new Product("Barrita", [85]),
 ]
 
