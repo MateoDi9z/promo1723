@@ -25,8 +25,9 @@ class Product {
 const products = [
     new Product("Facturas", [80, 150]),
     new Product("Tortafritas", [80, 150]),
+    new Product("Churros", [80, 150]),
     new Product("Alfajores", [50]),
-    new Product("Barrita", [100]),
+    new Product("Barrita", [85]),
 ]
 
 let response = ``
