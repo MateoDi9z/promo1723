@@ -1,7 +1,8 @@
 let container = document.getElementsByClassName("container")[0];
 
 class Product {
-  constructor(name, prices) {
+  constructor(name, prices, stock) {
+    this.stock = stock;
     this.name = name;
     this.prices = [];
     prices.forEach((v, i) => (this.prices[i + 1] = v));
@@ -17,9 +18,9 @@ class Product {
   }
 
   getHTML() {
-    return `<div class="box"><h1>${
-      this.name
-    }</h1><div class="price">${this.pricesBoxHTML()}</div></div>`;
+    return `<div class="box"><h1>${this.name}</h1><div class="price">${
+      this.stock == "SOLD" ? "SOLD OUT!" : this.pricesBoxHTML()
+    }</div></div>`;
   }
 }
 
@@ -27,9 +28,9 @@ const products = [
   new Product("Facturas", [80, 150]),
   new Product("Tortafritas", [80, 150]),
   new Product("Churros", [80, 150]),
-  new Product("Donas", [150]),
+  new Product("Donas", [150, 250]),
   new Product("Alfajores", [50]),
-  new Product("Barrita", [85]),
+  new Product("Barrita", [85], "SOLD"),
 ];
 
 let response = ``;
