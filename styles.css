@@ -6,7 +6,7 @@ body {
   /* font-family: 'Raleway', sans-serif; */
   font-family: sans-serif;
   background: #222;
-  overflow-y: hidden;
+  overflow-y: auto;
 }
 
 .container {
@@ -18,22 +18,26 @@ body {
   flex-wrap: wrap;
   display: flex;
   flex-direction: row;
+
   justify-content: space-between;
 }
 
 .box {
   /* flex-grow: .69  ; */
   background: var(--main);
+  text-align: center;
   color: white;
-  border-radius: 25px;
+  border-radius: 20px;
   display: flex;
   /* width: 90%; */
-  max-width: 40%;
   padding: 0 25px 0 25px;
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
-  justify-content: space-between;
+  margin-left: 10px;
+  flex-grow: 1;
+  align-content: center;
+  justify-content: center;
 }
 
 .box .price {
@@ -45,19 +49,12 @@ body {
 }
 
 .box h1 {
-  margin-right: 20px;
-  font-size: 3em;
+  margin-right: 10px;
+  font-size: 6vh;
 }
 
 .price {
-  font-size: 1.5em;
-}
-
-.targeta {
-  width: 100%;
-  text-align: center;
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 1em;
+  font-size: 3vh;
 }
 
 .title {
@@ -65,6 +62,8 @@ body {
   text-align: center;
   color: var(--main);
   font-weight: 900;
+  height: fit-content;
+  margin: 30px 0 0 0;
 }
 
 .title span {
@@ -91,6 +90,7 @@ body {
   font-size: 1.5em;
   font-weight: 600;
   transition: 0.4s;
+  height: fit-content;
   width: fit-content;
 }
 .ig:hover {
@@ -98,20 +98,31 @@ body {
   opacity: 0.5;
 }
 
+.payments_box {
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background: #444;
+  padding: 1px 0 4px 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
 .payments {
   display: flex;
-  width: 90%;
   justify-content: space-around;
-  margin-left: auto;
-  margin-right: auto;
+  width: 90%;
+  padding: 0 5% 0 5%;
 }
 .payments img {
-  height: 200px;
+  height: 150px;
 }
 .cards {
   width: 60%;
+  max-width: 400px;
 }
 .cards img {
+  margin: 30px 0 10px 0;
+  max-height: 100px;
   width: 100%;
 }
 .payments_methods {
@@ -130,17 +141,27 @@ body {
   .payments {
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    bottom: 0;
   }
-
+  .cards {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+  }
   .cards img {
-    height: 80px;
+    width: 80%;
+    height: auto;
+    object-fit: fill;
   }
   .btc img {
-    height: 120px;
+    width: 80%;
   }
   .cash img {
-    height: 120px;
+    width: 80%;
+  }
+  .payments_box {
+    position: relative;
+    padding-top: 20px;
   }
   .payments_methods {
     margin-bottom: 15px;

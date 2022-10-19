@@ -25,12 +25,13 @@ class Product {
 }
 
 const products = [
-  new Product("Facturas", [80, 150]),
-  new Product("Tortafritas", [80, 150]),
-  new Product("Churros", [80, 150]),
+  new Product("Facturas", [100, 150]),
+  new Product("Tortafritas", [100, 150]),
+  new Product("Churros", [100, 150]),
+  new Product("Bola de Fraile", [100, 150]),
   new Product("Donas", [150, 250]),
-  new Product("Alfajores", [50]),
-  new Product("Barrita", [85], "SOLD"),
+  new Product("Tostado", [100, 180]),
+  new Product("Jugo Naranja", [100]),
 ];
 
 let response = ``;
