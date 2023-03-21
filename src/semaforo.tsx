@@ -14,7 +14,7 @@ function Box(props: { p: { ig: string; apodo: string; color: string } }) {
     <a
       className="box"
       target="_blank"
-      href={`https://www.instagram.com/${p.ig}`}
+      href={p.ig ? `https://www.instagram.com/${p.ig}` : ''}
     >
       <h1>{p.apodo}</h1>
       <div className="color" style={{ backgroundColor: `#${p.color}` }}></div>
