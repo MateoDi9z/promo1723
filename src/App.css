@@ -4,3 +4,9 @@
   text-align: center;
   width: 30%;
 }
+
+@media (max-width: 768px) {
+  #root {
+    width: 90% !important;
+  }
+}
