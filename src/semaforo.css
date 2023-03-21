@@ -1,0 +1,42 @@
+.box {
+    width: 100%;
+    margin: 10px auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    min-width: 200px;
+    align-items: center;
+    background: #3a3a3a;
+    border-radius: 10px;
+}
+
+.box h1 {
+    font-size: 1em;
+    width: 100px;
+    color: white;
+}
+
+.color {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    display: block;
+    margin: 8px;
+}
+
+.colores {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.lbl {
+    display: flex;
+    place-content: center;
+    align-items: center;
+    font-size: .7em;
+    width: 250px;
+    font-weight: 800;
+    color: black;
+}
