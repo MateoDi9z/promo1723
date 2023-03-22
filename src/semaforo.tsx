@@ -67,6 +67,8 @@ export default function Semaforo() {
             </button> */}
         </div>
 
+      <p className="info">hace click para ver ig</p>
+      
       <div className="red">
         {filterColors("red", People)
           .sort((a, b) => sortColors("red", a, b))
