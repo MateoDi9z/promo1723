@@ -23,7 +23,7 @@ export async function postPromo() {
         clicks: data ? data[0].clicks + 1 : 0
     }).eq("estudiante", promo)
 
-    window.location.replace(url)
+    window.location.href = url
 }
 
 export async function postClick(name: string, ig: string) {
@@ -39,7 +39,8 @@ export async function postClick(name: string, ig: string) {
                 estudiante: name
             }
         ])
-        window.location.replace(ig)
+        window.location.href = ig
+
         return
     }
     
@@ -47,5 +48,5 @@ export async function postClick(name: string, ig: string) {
         clicks: data ? data[0].clicks + 1 : 0
     }).eq("estudiante", name)
 
-    window.location.replace(ig)
+    window.location.href = ig
 }
