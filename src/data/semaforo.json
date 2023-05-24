@@ -62,18 +62,18 @@
     {
         "name": "Carla Frias",
         "apodo": "Abi",
-        "color": "00ff00",
+        "color": "80FF00",
         "ig": ""
     },
     {
         "name": "Sol Nuñez",
         "apodo": "Sol",
-        "color": "F1FF00",
+        "color": "FFF000",
         "ig": "sollnnunez"
     },
     {
         "name": "Juan Guevara Eckert",
-        "apodo": "Chiken",
+        "apodo": "Pollo",
         "color": "FFFE00",
         "ig": "ll_ll_chicken_ll_ll"
     },
@@ -92,13 +92,13 @@
     {
         "name": "Maximo Quintana",
         "apodo": "Masi",
-        "color": "00FF06",
+        "color": "77FF00",
         "ig": "_maxi.quintana"
     },
     {
         "name": "Mateo Diaz",
         "apodo": "Diaz",
-        "color": "0FFF00",
+        "color": "3FFF00",
         "ig": "matedzz"
     },
     {
@@ -129,7 +129,7 @@
         "name": "Fransisco Vega",
         "apodo": "Fran",
         "color": "ff0000",
-        "ig": "frannvega"
+        "ig": "frannvega_"
     },
     {
         "name": "Luciano Perez",

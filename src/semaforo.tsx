@@ -82,7 +82,7 @@ export default function Semaforo() {
       <p className="mt-3">
         Ultima actualización:{" "}
         {new Date(
-          "Tue May 23 2023 10:56:45 GMT-0300 (hora estándar de Argentina)"
+          "Wed May 24 2023 10:56:45 GMT-0300 (hora estándar de Argentina)"
         ).toLocaleDateString()}
       </p>
       <p className="info mb-4 mt-2">hace click para ver ig</p>
