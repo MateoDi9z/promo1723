@@ -1,7 +1,7 @@
 import People from "./data/semaforo.json";
 import "./semaforo.css";
 
-import { postView, postClick, postPromo } from "./db"
+import { postView, postClick, postPromo } from "./db";
 
 type people = {
   name: string;
@@ -54,11 +54,11 @@ function sortColors(param: "red" | "green" | "blue", p1: people, p2: people) {
 }
 
 export default function Semaforo() {
-  postView()
+  postView();
   return (
     <div className="container">
       <h1>SEMAFORO</h1>
-      <div  className="text-white" onClick={() => postPromo()}>
+      <div className="text-white" onClick={() => postPromo()}>
         <h1 className="camada font-bold inline-block">CAMADA 1723</h1>
       </div>
 
@@ -81,9 +81,7 @@ export default function Semaforo() {
 
       <p className="mt-3">
         Ultima actualización:{" "}
-        {new Date(
-          "Wed May 24 2023 10:56:45 GMT-0300 (hora estándar de Argentina)"
-        ).toLocaleDateString()}
+        {new Date("Thu Jun 15 2023 23:12:59 GMT-0300").toLocaleDateString()}
       </p>
       <p className="info mb-4 mt-2">hace click para ver ig</p>
 
